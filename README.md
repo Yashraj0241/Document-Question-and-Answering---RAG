@@ -14,7 +14,7 @@ This project is a **Document Question-Answering** application powered by the **G
 - [Usage](#usage)
 - [Troubleshooting](#Troubleshooting)
 - [Result](#Result)
-- 
+
 ---
 
 ## Features
