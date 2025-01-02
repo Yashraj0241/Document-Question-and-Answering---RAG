@@ -8,7 +8,7 @@ This project is a **Document Question-Answering** application powered by the **G
 ## **Table of Contents**
 - [About the Project](#about-the-project)
 - [Features](#features)
-- [Tech Stack](#tech stack)
+- [Tech Stack](#tech-stack)
 - [Model Architecture](#model-architecture)
 - [Setup and Installation](#setup-and-installation)
 - [Usage](#usage)
