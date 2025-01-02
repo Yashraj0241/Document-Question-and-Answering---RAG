@@ -1,7 +1,20 @@
 # Data Science Document Q&A
+## About the Project
 
 This project is a **Document Question-Answering** application powered by the **Gemma Model** and **Streamlit**. It allows users to upload documents, create a vector store for document embedding, and ask questions directly related to the uploaded content. The answers are generated based on the context from the documents.
 
+---
+
+## **Table of Contents**
+- [About the Project](#about-the-project)
+- [Features](#features)
+- [Tech Stack](#tech stack)
+- [Model Architecture](#model-architecture)
+- [Setup and Installation](#setup-and-installation)
+- [Usage](#usage)
+- [Troubleshooting](#Troubleshooting)
+- [Result](#Result)
+- 
 ---
 
 ## Features
@@ -28,7 +41,40 @@ This project is a **Document Question-Answering** application powered by the **G
 
 ---
 
-## Installation and Setup
+## Model Architecture
+
+1. **Input Layer**:
+   - User uploads documents in PDF format.
+   - User inputs a query through the Streamlit interface.
+
+2. **Document Preprocessing**:
+   - **PyPDFLoader** extracts text from the uploaded PDFs.
+   - Text is split into chunks using **RecursiveCharacterTextSplitter** to ensure manageable sizes for embedding and retrieval.
+
+3. **Vectorization**:
+   - **Google Generative AI Embeddings** converts text chunks into high-dimensional vector representations.
+
+4. **Vector Store**:
+   - **FAISS** stores and indexes the vector embeddings for efficient similarity searches.
+
+5. **Question Processing**:
+   - User query is processed through a **ChatPromptTemplate** to guide the language model.
+
+6. **Retriever**:
+   - The retriever searches the FAISS vector store to find the most relevant document chunks for the query.
+
+7. **LLM (Gemma Model)**:
+   - Processes the retrieved document context and the query.
+   - Generates a precise, context-specific answer.
+
+8. **Output Layer**:
+   - Displays the generated answer.
+   - Shows relevant document chunks used in the similarity search.
+   - Optionally summarizes the document content for additional insights.
+
+---
+
+## Setup and Installation
 
 ### Prerequisites
 
@@ -121,26 +167,7 @@ This project is a **Document Question-Answering** application powered by the **G
 
 ---
 
-## Future Enhancements
 
-- Add support for more document formats (e.g., `.txt`, `.docx`, `.csv`).
-- Include progress indicators for vector store creation.
-- Implement keyword-based document filtering.
-- Enable multi-user sessions in Streamlit.
-- Add a feature to visualize embeddings for enhanced debugging and analysis.
-- Introduce caching for frequently asked questions to improve response time.
-
----
-
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
-
----
-
-## Author
-
-- **Your Name**  
   [GitHub Profile](https://github.com/your-profile) | [LinkedIn](https://www.linkedin.com/in/your-profile)
 
 ---
