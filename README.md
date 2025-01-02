@@ -70,7 +70,7 @@ This project is a **Document Question-Answering** application powered by the **G
 8. **Output Layer**:
    - Displays the generated answer.
    - Shows relevant document chunks used in the similarity search.
-   - Optionally summarizes the document content for additional insights.
+  
 
 ---
 
@@ -78,7 +78,7 @@ This project is a **Document Question-Answering** application powered by the **G
 
 ### Prerequisites
 
-- Python 3.8 or higher
+- Python 3.9 or higher
 - `pip` (Python package installer)
 
 ### Steps to Run
@@ -91,8 +91,8 @@ This project is a **Document Question-Answering** application powered by the **G
 
 2. **Set Up a Virtual Environment**
    ```bash
-   python -m venv llm_env
-   source llm_env/bin/activate   # On Windows: llm_env\Scripts\activate
+   conda create -n myenv python=3.9 
+   source myenv/bin/activate   # On Windows: myenv\Scripts\activate
    ```
 
 3. **Install Required Dependencies**
@@ -133,10 +133,7 @@ This project is a **Document Question-Answering** application powered by the **G
 3. **View Similar Documents**:
    - Expand the **"Document Similarity Search"** section to view relevant document chunks used to generate the answer.
 
-4. **Generate Content Summaries**:
-   - Use the new summary feature to generate concise summaries of the uploaded documents.
-
-5. **Response Time**:
+4. **Response Time**:
    - Monitor real-time response time displayed below the answer for performance insights.
 
 ---
@@ -147,8 +144,7 @@ This project is a **Document Question-Answering** application powered by the **G
 |-- data/                     # Directory for storing PDF documents
 |-- app.py                    # Main Streamlit application code
 |-- requirements.txt          # Required dependencies
-|-- .env                      # Environment variables (not included in the repo)
-|-- README.md                 # Project documentation
+|-- .env                      # Environment variables 
 ```
 
 ---
@@ -168,8 +164,4 @@ This project is a **Document Question-Answering** application powered by the **G
 ---
 
 
-  [GitHub Profile](https://github.com/your-profile) | [LinkedIn](https://www.linkedin.com/in/your-profile)
-
----
-
-Feel free to fork, contribute, or open issues for improvements! 🎉
+  
