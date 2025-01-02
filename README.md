@@ -12,7 +12,9 @@ This project is a **Document Question-Answering** application powered by the **G
 - [Model Architecture](#model-architecture)
 - [Setup and Installation](#setup-and-installation)
 - [Usage](#usage)
+- [File Structure](#File-Structure)
 - [Troubleshooting](#Troubleshooting)
+
 
 
 ---
