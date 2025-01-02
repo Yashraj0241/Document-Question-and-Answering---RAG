@@ -1,7 +1,7 @@
 # Data Science Document Q&A
 ## About the Project
 
-This project is a **Document Question-Answering** application powered by the **Gemma Model** and **Streamlit**. It allows users to upload documents, create a vector store for document embedding, and ask questions directly related to the uploaded content. The answers are generated based on the context from the documents.
+This project is a **Document Question-Answering** application powered by the **Gemma Model** and **Streamlit**. It allows users to upload documents, create a vector store for document embedding and ask questions directly related to the uploaded content. The answers are generated based on the context from the documents.
 
 ---
 
