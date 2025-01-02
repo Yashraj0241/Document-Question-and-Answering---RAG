@@ -36,6 +36,7 @@ This project is a **Document Question-Answering** application powered by the **G
 
 - **Python**
 - **Streamlit**
+- **Groq**
 - **FAISS** (Facebook AI Similarity Search)
 - **Google Generative AI** for embeddings
 - **LangChain** for processing and chains
