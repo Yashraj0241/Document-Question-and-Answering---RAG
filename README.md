@@ -13,7 +13,7 @@ This project is a **Document Question-Answering** application powered by the **G
 - [Setup and Installation](#setup-and-installation)
 - [Usage](#usage)
 - [Troubleshooting](#Troubleshooting)
-- [Result](#Result)
+
 
 ---
 
